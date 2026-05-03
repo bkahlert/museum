@@ -5,240 +5,420 @@
       "title": "bedboy 2006",
       "description": "Bed & Breakfast Contest, Berlin",
       "client": "enjoy bed & breakfast\nwww.ebab.de",
-      "long_description": "Possibility for amateurs and models to become the ebab's new bedboy 2006 (promotion model) by applying online and to be voted by the website's visitors\nDynamic scaling of uploaded images\nBandwidth saving asynchronous loading of data (ajax) from the model database",
       "url": "www.bedboy.de",
       "process_time": "50:00:00",
       "completion_date": "2006-09-05",
       "show_as_reference": false,
-      "active": false
+      "active": false,
+      "photos": [
+        "1.Home.jpg",
+        "1.Application.jpg",
+        "1.Conditions.jpg",
+        "1.Contact.jpg",
+        "1.Voting.jpg"
+      ],
+      "notes": [
+        "Possibility for amateurs and models to become the ebab's new bedboy 2006 (promotion model) by applying online and to be voted by the website's visitors",
+        "Dynamic scaling of uploaded images",
+        "Bandwidth saving asynchronous loading of data (ajax) from the model database"
+      ]
     },
     {
       "id": "2",
       "title": "aldo consulting",
       "description": "Business Consultancy, Berlin",
       "client": "Volker Magdalinski",
-      "long_description": "",
       "url": "www.aldocon.de",
       "process_time": "12:00:00",
       "completion_date": "2006-08-10",
       "show_as_reference": true,
-      "active": false
+      "active": false,
+      "photos": [
+        "2.Home.jpg",
+        "2.Contact.jpg",
+        "2.References.jpg"
+      ]
     },
     {
       "id": "3",
       "title": "AKD Pflegedienst",
       "description": "Nursing Service, Berlin",
       "client": "AKD\nAktiver Kompetenter Dienst\nAmbulanter Pflegedienst\n\nMitglied im Verein für Selbstbestimmtes Wohnen im Alter",
-      "long_description": "",
       "url": "www.akd-pflegedienst.de",
       "process_time": "20:00:00",
       "completion_date": "2006-07-21",
       "show_as_reference": true,
-      "active": false
+      "active": false,
+      "photos": [
+        "3.Home.jpg",
+        "3.Berlin map.jpg",
+        "3.Contact.jpg",
+        "3.Services.jpg"
+      ]
     },
     {
       "id": "4",
       "title": "BAUTRA GmbH",
       "description": "Construction Schedule / Supervision, Berlin",
       "client": "BAUTRA GmbH\nBauplanung und Bauüberwachung",
-      "long_description": "Ambitious website that enabled emplyoees to edit the website's content and arrangement in a live edit mode.\nFurthermore users can logon to a customer area where they can access specially provided data",
       "url": "www.bautra-berlin.de",
       "process_time": "90:00:00",
       "completion_date": "2006-04-12",
       "show_as_reference": true,
-      "active": false
+      "active": false,
+      "photos": [
+        "4.Home.jpg",
+        "4.Customer management.jpg",
+        "4.Interactive edit mode.jpg",
+        "4.Partners.jpg",
+        "4.Referemces.jpg"
+      ],
+      "notes": [
+        "Ambitious website that enabled emplyoees to edit the website's content and arrangement in a live edit mode.",
+        "Furthermore users can logon to a customer area where they can access specially provided data"
+      ]
     },
     {
       "id": "5",
       "title": "Boris Kralj",
       "description": "Photography / Visual Concept, Berlin / Belgrade",
       "client": "Boris Kralj",
-      "long_description": "Reprogramming for easy image exchange",
       "url": "www.boriskralj.de",
       "process_time": "14:00:00",
       "completion_date": "2006-07-26",
       "show_as_reference": true,
-      "active": true
+      "active": true,
+      "photos": [
+        "5.Home.jpg",
+        "5.Contact.jpg",
+        "5.Group.jpg",
+        "5.Lagerfeld.jpg",
+        "5.Travel.jpg"
+      ],
+      "notes": [
+        "Reprogramming for easy image exchange"
+      ]
     },
     {
       "id": "6",
       "title": "COMMITMENT",
       "description": "Agency for Actors, Directors, Screenwriters and Composers, Berlin",
       "client": "COMMITMENT\nAgentur für Film, Fernsehen & Theater\nMarkus Potyka & Marco Gilles GbR",
-      "long_description": "Programming and implementation of a streaming solution",
       "url": "www.commitment.de",
       "process_time": "30:00:00",
       "completion_date": "2006-07-07",
       "show_as_reference": true,
-      "active": true
+      "active": true,
+      "photos": [
+        "6.Home.jpg",
+        "6.Contact.jpg",
+        "6.Perfomers.jpg",
+        "6.Stream.jpg"
+      ],
+      "notes": [
+        "Programming and implementation of a streaming solution"
+      ]
     },
     {
       "id": "7",
       "title": "Jugendbereich des Mann-O-Meter e.V.",
       "description": "Gay Jouth Group, Berlin",
       "client": "Mann-O-Meter e.V.\nwww.mann-o-meter.de",
-      "long_description": "",
       "url": "www.jungschwuppen.de",
       "process_time": "35:00:00",
       "completion_date": "2006-10-10",
       "show_as_reference": false,
-      "active": true
+      "active": true,
+      "photos": []
     },
     {
       "id": "8",
       "title": "INFOdatenbank des Mann-O-Meter e.V.",
       "description": "Information Service, Berlin",
       "client": "Mann-O-Meter e.V.\nwww.mann-o-meter.de",
-      "long_description": "Programming of a middle sized database with user friendly access\nImplementation of google maps",
       "url": "www.mann-o-meter.de/db",
       "process_time": "120:00:00",
       "completion_date": "2005-10-28",
       "show_as_reference": true,
-      "active": true
+      "active": true,
+      "photos": [
+        "8.Management.jpg",
+        "8.Result list.jpg",
+        "8.Single view.jpg",
+        "8.Statistic.jpg"
+      ],
+      "notes": [
+        "Programming of a middle sized database with user friendly access",
+        "Implementation of google maps"
+      ]
     },
     {
       "id": "9",
       "title": "meetyoo conferencing | Stream",
       "description": "Streaming Platform for Conference Provider, Berlin",
       "client": "meetyoo conferencing GmbH\nwww.meetyoo.de",
-      "long_description": "Design and programming of a new applications server's front-end\nEnabling of easy und userfriendly access for customers to their conference streams (e.g. by providing operator-created links containing encrypted logon information)",
       "url": "stream.meetyoo.de",
       "process_time": "40:00:00",
       "completion_date": "2006-09-07",
       "show_as_reference": false,
-      "active": true
+      "active": true,
+      "photos": [
+        "9.Home.jpg",
+        "9.Stream setting.jpg",
+        "9.Stream.jpg"
+      ],
+      "notes": [
+        "Design and programming of a new applications server's front-end",
+        "Enabling of easy und userfriendly access for customers to their conference streams (e.g. by providing operator-created links containing encrypted logon information)"
+      ]
     },
     {
       "id": "10",
       "title": "Bjørnson",
       "description": "My private website",
       "client": "Björn Kahlert",
-      "long_description": "Concept & Design\nAsynchronous (ajax) server-side (PHP) generation of polaroide-like images\n",
       "url": "www.bjornson.co.uk",
       "process_time": "50:00:00",
       "completion_date": "2006-07-18",
       "show_as_reference": false,
-      "active": false
+      "active": false,
+      "photos": [
+        "10.Home.jpg",
+        "10.Images.jpg",
+        "10.Stupidity.jpg",
+        "10.Text.jpg"
+      ],
+      "notes": [
+        "Concept & Design",
+        "Asynchronous (ajax) server-side (PHP) generation of polaroide-like images"
+      ]
     },
     {
       "id": "11",
       "title": "Schapka",
       "description": "Schapka Designer, Berlin",
       "client": "Evelin Mauff",
-      "long_description": "",
       "url": "www.schapka.net",
       "process_time": "25:00:00",
       "completion_date": "2004-11-29",
       "show_as_reference": true,
-      "active": false
+      "active": false,
+      "photos": [
+        "11.Home.jpg",
+        "11.Model Legionnaire.jpg",
+        "11.Model Straw.jpg",
+        "11.Model Vamp.jpg",
+        "11.Overview.jpg"
+      ]
     },
     {
       "id": "12",
       "title": "Fotoatelier apart berlin",
       "description": "Photo Studio / Cultural Network, Berlin",
       "client": "Moritz David Friedrich\nFotoatelier apart",
-      "long_description": "Concept & Design\nFlash intro\nImplementation of a model database + frontend",
       "url": "www.apart-berlin.com",
       "process_time": "100:00:00",
       "completion_date": "2002-09-25",
       "show_as_reference": true,
-      "active": false
+      "active": false,
+      "photos": [
+        "12.Home.jpg",
+        "12.Artist network.jpg",
+        "12.Contact.jpg",
+        "12.Grouping.jpg",
+        "12.Photographers.jpg"
+      ],
+      "notes": [
+        "Concept & Design",
+        "Flash intro",
+        "Implementation of a model database + frontend"
+      ]
     },
     {
       "id": "13",
       "title": "Moritz David Friedrich",
       "description": "Photographer, Berlin",
       "client": "Moritz David Friedrich",
-      "long_description": "Design\nContent exclusively from user-administratible database",
       "url": "www.moritzdavidfriedrich.com",
       "process_time": "40:00:00",
       "completion_date": "2004-03-02",
       "show_as_reference": true,
-      "active": false
+      "active": false,
+      "photos": [
+        "13.Home.jpg",
+        "13-.Contact.jpg"
+      ],
+      "notes": [
+        "Design",
+        "Content exclusively from user-administratible database"
+      ]
     },
     {
       "id": "14",
       "title": "Roman Göbel",
       "description": "Fashion and Portrait Photographer, Berlin",
       "client": "Roman Göbel",
-      "long_description": "Asynchronous (ajax) server-side (PHP) generation of highest quality images\nDynamical preloading of images\nReloading of images in a better quality if window is enlarged\n",
       "url": "www.romangoebel.com",
       "process_time": "24:00:00",
       "completion_date": "2006-11-18",
       "show_as_reference": true,
-      "active": false
+      "active": false,
+      "photos": [
+        "14.Home.jpg",
+        "14.Contact.jpg",
+        "14.Fashion.jpg",
+        "14.Film.jpg",
+        "14.Travel.jpg",
+        "14.Various.jpg"
+      ],
+      "notes": [
+        "Asynchronous (ajax) server-side (PHP) generation of highest quality images",
+        "Dynamical preloading of images",
+        "Reloading of images in a better quality if window is enlarged"
+      ]
     },
     {
       "id": "15",
       "title": "Christiane Buchholz",
       "description": "Make-Up Artist, Berlin",
       "client": "Christiane Buchholz",
-      "long_description": "Asynchronous (ajax) server-side (PHP) generation of highest quality images\nDynamical preloading of images\nReloading of images in a better quality if window is enlarged\n",
       "url": "www.christiane-buchholz.com",
       "process_time": "30:00:00",
       "completion_date": "2007-06-21",
       "show_as_reference": true,
-      "active": true
+      "active": true,
+      "photos": [
+        "15.Home.jpg",
+        "15.Beauty.jpg",
+        "15.Contact.jpg",
+        "15.Editoral.jpg",
+        "15.Fashion.jpg"
+      ],
+      "notes": [
+        "Asynchronous (ajax) server-side (PHP) generation of highest quality images",
+        "Dynamical preloading of images",
+        "Reloading of images in a better quality if window is enlarged"
+      ]
     },
     {
       "id": "16",
       "title": "Georg Daniel Sartore",
       "description": "International Stylist, Italy / Germany",
       "client": "Georg Daniel Sartore",
-      "long_description": "Flash-less animations\nDynamical preloading of images",
       "url": "www.danielgeorgsartore.com",
       "process_time": "30:00:00",
       "completion_date": "2007-07-29",
       "show_as_reference": true,
-      "active": true
+      "active": true,
+      "photos": [
+        "16.Home.jpg",
+        "16.Conceptual.jpg",
+        "16.Contact.jpg",
+        "16.Fashion.jpg"
+      ],
+      "notes": [
+        "Flash-less animations",
+        "Dynamical preloading of images"
+      ]
     },
     {
       "id": "17",
       "title": "arno shop",
       "description": "Parisien Clothing Boutique",
       "client": "Arno Bauer",
-      "long_description": "Based on xt:Commerce\nClient-side editable content\nMultiple language support\nCredit card support through custom connection to french bank",
       "url": "www.arno-shop.com",
       "process_time": "120:00:00",
       "completion_date": "2008-05-25",
       "show_as_reference": true,
-      "active": false
+      "active": false,
+      "photos": [
+        "17.0.jpg",
+        "17.1.jpg",
+        "17.2.jpg",
+        "17.3.jpg",
+        "17.4.jpg",
+        "17.5.jpg",
+        "17.6.jpg"
+      ],
+      "notes": [
+        "Based on xt:Commerce",
+        "Client-side editable content",
+        "Multiple language support",
+        "Credit card support through custom connection to french bank"
+      ]
     },
     {
       "id": "18",
       "title": "Mike Vossmann",
       "description": "Magician and Clown, Berlin",
       "client": "Matthias Voigt",
-      "long_description": "Flash-less animations",
       "url": "www.mike-vossmann.de",
       "process_time": "15:00:00",
       "completion_date": "2009-06-21",
       "show_as_reference": true,
-      "active": true
+      "active": true,
+      "photos": [
+        "18.1.jpg",
+        "18.2.jpg",
+        "18.3.jpg"
+      ],
+      "notes": [
+        "Flash-less animations"
+      ]
     },
     {
       "id": "19",
       "title": "Bert Loewenherz",
       "description": "Photographer, Berlin",
       "client": "Bert Löwenherz",
-      "long_description": "Flex 4 based\nWordPress based through self developed WordPress Web Service Plugin\nClient-side editable content\nDynamic resizing of images based on client's resolution\nIntelligent image preloader\nServer-side cache\nClient-side cache\nTouchpad support for Mac OS X\nCoverFlow effect\nIndexable by all major web search engines (despite Flash/Flex)\nGoogle Analytics integration ",
       "url": "www.bertloewenherz.com",
       "process_time": "90:00:00",
       "completion_date": "2010-03-07",
       "show_as_reference": true,
-      "active": true
+      "active": true,
+      "photos": [
+        "19.1.jpg",
+        "19.2.jpg",
+        "19.3.jpg",
+        "19.4.jpg",
+        "19.5.jpg",
+        "19.6.jpg"
+      ],
+      "notes": [
+        "Flex 4 based",
+        "WordPress based through self developed WordPress Web Service Plugin",
+        "Client-side editable content",
+        "Dynamic resizing of images based on client's resolution",
+        "Intelligent image preloader",
+        "Server-side cache",
+        "Client-side cache",
+        "Touchpad support for Mac OS X",
+        "CoverFlow effect",
+        "Indexable by all major web search engines (despite Flash/Flex)",
+        "Google Analytics integration"
+      ]
     },
     {
       "id": "20",
       "title": "Marcus Behrens",
       "description": "Psychologist, Berlin",
       "client": "Marcus Behrens",
-      "long_description": "WordPress based\nClient-side editable content\nCollaboration with professional designer",
       "url": "www.marcus-behrens.de",
       "process_time": "20:00:00",
       "completion_date": "2011-10-19",
       "show_as_reference": true,
-      "active": true
+      "active": true,
+      "photos": [
+        "20.Home.jpg",
+        "20.Coaching.jpg",
+        "20.Contact.jpg",
+        "20.Vita.jpg"
+      ],
+      "notes": [
+        "WordPress based",
+        "Client-side editable content",
+        "Collaboration with professional designer"
+      ]
     },
     {
       "id": "21",
@@ -248,7 +428,15 @@
       "url": "www.bkahlert.com",
       "completion_date": "2010",
       "show_as_reference": true,
-      "active": false
+      "active": false,
+      "photos": [
+        "21.Home.jpg",
+        "21.Contact.jpg",
+        "21.Jurisdiction.jpg",
+        "21.Philosophy.jpg",
+        "21.References.jpg",
+        "21.Skills.jpg"
+      ]
     },
     {
       "id": "22",
@@ -258,7 +446,20 @@
       "url": "bkahlert.com",
       "completion_date": "2012",
       "show_as_reference": true,
-      "active": false
+      "active": false,
+      "photos": [
+        "22.home.jpg",
+        "22.blog.jpg",
+        "22.contact.jpg",
+        "22.contact1.jpg",
+        "22.contact2.jpg",
+        "22.development.jpg",
+        "22.facts.jpg",
+        "22.references1.jpg",
+        "22.references2.jpg",
+        "22.references3.jpg",
+        "22.skills.jpg"
+      ]
     },
     {
       "id": "23",
@@ -266,31 +467,66 @@
       "description": "Webdesign and Webprogramming, Berlin",
       "client": "Björn Kahlert",
       "url": "www.bjoern-kahlert.eu",
-      "completion_date": "2022",
+      "completion_date": "2004",
       "show_as_reference": true,
-      "active": false
+      "active": false,
+      "photos": [
+        "23.jpg"
+      ]
     },
     {
       "id": "24",
       "title": "Björn Kahlert, v1",
       "description": "Personal dashboard / start page",
-      "long_description": "SemanticUI, Jetpack Compose alpha, ClickUp integration",
       "client": "Björn Kahlert",
       "url": "hello.bkahlert.com",
       "completion_date": "2022",
       "show_as_reference": true,
-      "active": false
+      "active": false,
+      "photos": [
+        "24.home.png",
+        "24.debug-clickup.png",
+        "24.debug-colors.png",
+        "24.debug-search.png",
+        "24.debug-semanticui.png"
+      ],
+      "notes": [
+        "SemanticUI, Jetpack Compose alpha, ClickUp integration"
+      ]
     },
     {
       "id": "25",
       "title": "Björn Kahlert, v2",
       "description": "Personal dashboard / start page",
-      "long_description": "Fritz2, Tailwind CSS, ClickUp integration",
       "client": "Björn Kahlert",
       "url": "hello.bkahlert.com",
       "completion_date": "2023",
       "show_as_reference": true,
-      "active": false
+      "active": false,
+      "photos": [
+        "25.home-booksmarks.png",
+        "25.home-chatbot.png",
+        "25.home-dropbox.png",
+        "25.home-ssh.png",
+        "25.home-widgets.png",
+        "25.playground-buttons.png",
+        "25.playground-chat.png",
+        "25.playground-chatbot.png",
+        "25.playground-clickup.png",
+        "25.playground-colorspace.png",
+        "25.playground-glass.png",
+        "25.playground-image.png",
+        "25.playground-video.png"
+      ],
+      "notes": [
+        "Infrastructure as Code, Backend, Frontend all in Kotlin",
+        "Kotlin Multiplatform",
+        "Gradle Multi-Project Composite Build",
+        "AWS CDK, Lambdas, Cognito, API Gateway, …",
+        "Sign in with Apple",
+        "Fritz2, Tailwind CSS",
+        "ClickUp integration"
+      ]
     }
   ]
 }
