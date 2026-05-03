@@ -8,8 +8,7 @@ function parseYear(date: string): number {
 }
 
 function compareDateDesc(a: string, b: string): number {
-  if (a === b) return 0
-  return a > b ? -1 : 1
+  return b.localeCompare(a)
 }
 
 const exhibits = ref<Exhibit[]>([])

@@ -14,6 +14,7 @@ function jumpTo(id: string) {
 
 onMounted(async () => {
   await nextTick()
+  activeId.value = props.decades[0]?.id ?? null
   observer = new IntersectionObserver(
     (entries) => {
       const inView = entries

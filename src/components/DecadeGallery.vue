@@ -61,6 +61,7 @@ function returnToEntrance() {
   padding-bottom: 6rem;
   isolation: isolate;
   scroll-snap-align: start;
+  scroll-margin-top: 4rem;
 }
 
 .threshold {
