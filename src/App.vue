@@ -18,10 +18,6 @@ function close() {
   selected.value = null
 }
 
-function returnToTop() {
-  window.scrollTo({ top: 0, behavior: 'smooth' })
-}
-
 let raf = 0
 function onScroll() {
   if (raf) return
@@ -77,9 +73,6 @@ const totalExhibits = computed(() =>
           {{ totalExhibits }} exhibits across {{ byDecade.length }} decades.<br />
           Thank you for visiting.
         </p>
-        <button class="back" type="button" @click="returnToTop">
-          ↑ Return to entrance
-        </button>
       </div>
     </footer>
 
@@ -190,28 +183,7 @@ a {
   font-size: 1.1rem;
   font-style: italic;
   line-height: 1.6;
-  margin: 0 0 2rem;
-}
-
-.back {
-  background: transparent;
-  border: 1px solid rgba(196, 163, 104, 0.4);
-  color: rgba(245, 232, 210, 0.9);
-  padding: 0.7rem 1.5rem;
-  border-radius: 2px;
-  font-family: system-ui, sans-serif;
-  font-size: 0.78rem;
-  letter-spacing: 0.3em;
-  text-transform: uppercase;
-  cursor: pointer;
-  transition:
-    background 0.3s ease,
-    border-color 0.3s ease;
-}
-
-.back:hover {
-  background: rgba(196, 163, 104, 0.08);
-  border-color: rgba(196, 163, 104, 0.7);
+  margin: 0;
 }
 
 .progress {

@@ -2,7 +2,7 @@
 import { computed } from 'vue'
 import { useExhibits } from '@/composables/useExhibits'
 
-const { yearRange, decadeCount } = useExhibits()
+const { decadeCount } = useExhibits()
 
 const NUMBER_WORDS: Record<number, string> = {
   1: 'One',
@@ -18,22 +18,16 @@ const decadesLine = computed(() => {
   const word = NUMBER_WORDS[n] ?? String(n)
   return `${word} ${n === 1 ? 'decade' : 'decades'} of websites, applications, and experiments`
 })
-
-const yearsLine = computed(() => {
-  const r = yearRange.value
-  if (!r) return ''
-  return r.min === r.max ? `${r.min}` : `${r.min} — ${r.max}`
-})
 </script>
 
 <template>
   <header class="hall">
     <div class="title-plate">
       <div class="eyebrow">A retrospective</div>
-      <h1>Werkschau</h1>
-      <p v-if="decadesLine && yearsLine" class="subtitle">
+      <h1>Œuvre</h1>
+      <p v-if="decadesLine" class="subtitle">
         {{ decadesLine }}<br />
-        by Björn Kahlert · {{ yearsLine }}
+        by <a href="https://bkahlert.com" class="author">Björn Kahlert</a>
       </p>
     </div>
   </header>
@@ -85,5 +79,24 @@ const yearsLine = computed(() => {
   font-size: 1.05rem;
   line-height: 1.6;
   color: rgba(245, 232, 210, 0.65);
+}
+
+.author {
+  color: rgba(245, 232, 210, 0.85);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(196, 163, 104, 0.4);
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.author:hover,
+.author:focus-visible {
+  color: #f5e8d2;
+  border-color: rgba(196, 163, 104, 0.9);
+}
+
+.author:focus-visible {
+  outline: none;
 }
 </style>

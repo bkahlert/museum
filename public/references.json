@@ -11,16 +11,15 @@
       "show_as_reference": false,
       "active": false,
       "photos": [
+        "1.Voting.jpg",
         "1.Home.jpg",
         "1.Application.jpg",
-        "1.Conditions.jpg",
-        "1.Contact.jpg",
-        "1.Voting.jpg"
+        "1.Contact.jpg"
       ],
       "notes": [
-        "Possibility for amateurs and models to become the ebab's new bedboy 2006 (promotion model) by applying online and to be voted by the website's visitors",
+        "Allowed amateurs and models to apply online to become ebab's new bedboy 2006 (promotion model) and be voted on by the website's visitors",
         "Dynamic scaling of uploaded images",
-        "Bandwidth saving asynchronous loading of data (ajax) from the model database"
+        "Bandwidth-saving asynchronous loading of data (Ajax) from the model database"
       ]
     },
     {
@@ -35,8 +34,8 @@
       "active": false,
       "photos": [
         "2.Home.jpg",
-        "2.Contact.jpg",
-        "2.References.jpg"
+        "2.References.jpg",
+        "2.Contact.jpg"
       ]
     },
     {
@@ -51,9 +50,9 @@
       "active": false,
       "photos": [
         "3.Home.jpg",
+        "3.Services.jpg",
         "3.Berlin map.jpg",
-        "3.Contact.jpg",
-        "3.Services.jpg"
+        "3.Contact.jpg"
       ]
     },
     {
@@ -68,14 +67,14 @@
       "active": false,
       "photos": [
         "4.Home.jpg",
+        "4.Partners.jpg",
         "4.Customer management.jpg",
         "4.Interactive edit mode.jpg",
-        "4.Partners.jpg",
-        "4.Referemces.jpg"
+        "4.References.jpg"
       ],
       "notes": [
-        "Ambitious website that enabled emplyoees to edit the website's content and arrangement in a live edit mode.",
-        "Furthermore users can logon to a customer area where they can access specially provided data"
+        "Ambitious website that allowed employees to edit content and layout in a live edit mode",
+        "Customer area where authenticated users can access tailored data"
       ]
     },
     {
@@ -90,10 +89,10 @@
       "active": true,
       "photos": [
         "5.Home.jpg",
-        "5.Contact.jpg",
         "5.Group.jpg",
         "5.Lagerfeld.jpg",
-        "5.Travel.jpg"
+        "5.Travel.jpg",
+        "5.Contact.jpg"
       ],
       "notes": [
         "Reprogramming for easy image exchange"
@@ -111,9 +110,9 @@
       "active": true,
       "photos": [
         "6.Home.jpg",
-        "6.Contact.jpg",
         "6.Perfomers.jpg",
-        "6.Stream.jpg"
+        "6.Stream.jpg",
+        "6.Contact.jpg"
       ],
       "notes": [
         "Programming and implementation of a streaming solution"
@@ -122,7 +121,7 @@
     {
       "id": "7",
       "title": "Jugendbereich des Mann-O-Meter e.V.",
-      "description": "Gay Jouth Group, Berlin",
+      "description": "Gay Youth Group, Berlin",
       "client": "Mann-O-Meter e.V.\nwww.mann-o-meter.de",
       "url": "www.jungschwuppen.de",
       "process_time": "35:00:00",
@@ -142,14 +141,14 @@
       "show_as_reference": true,
       "active": true,
       "photos": [
-        "8.Management.jpg",
         "8.Result list.jpg",
         "8.Single view.jpg",
+        "8.Management.jpg",
         "8.Statistic.jpg"
       ],
       "notes": [
-        "Programming of a middle sized database with user friendly access",
-        "Implementation of google maps"
+        "Programmed a mid-sized database with user-friendly access",
+        "Google Maps integration"
       ]
     },
     {
@@ -163,13 +162,13 @@
       "show_as_reference": false,
       "active": true,
       "photos": [
-        "9.Home.jpg",
         "9.Stream setting.jpg",
-        "9.Stream.jpg"
+        "9.Stream.jpg",
+        "9.Home.jpg"
       ],
       "notes": [
-        "Design and programming of a new applications server's front-end",
-        "Enabling of easy und userfriendly access for customers to their conference streams (e.g. by providing operator-created links containing encrypted logon information)"
+        "Design and programming of a new application server's front-end",
+        "Easy, user-friendly access for customers to their conference streams (e.g. via operator-created links containing encrypted login information)"
       ]
     },
     {
@@ -190,7 +189,7 @@
       ],
       "notes": [
         "Concept & Design",
-        "Asynchronous (ajax) server-side (PHP) generation of polaroide-like images"
+        "Asynchronous (Ajax) server-side (PHP) generation of Polaroid-like images"
       ]
     },
     {
@@ -204,11 +203,11 @@
       "show_as_reference": true,
       "active": false,
       "photos": [
+        "11.Overview.jpg",
         "11.Home.jpg",
         "11.Model Legionnaire.jpg",
         "11.Model Straw.jpg",
-        "11.Model Vamp.jpg",
-        "11.Overview.jpg"
+        "11.Model Vamp.jpg"
       ]
     },
     {
@@ -223,15 +222,15 @@
       "active": false,
       "photos": [
         "12.Home.jpg",
-        "12.Artist network.jpg",
-        "12.Contact.jpg",
         "12.Grouping.jpg",
-        "12.Photographers.jpg"
+        "12.Photographers.jpg",
+        "12.Artist network.jpg",
+        "12.Contact.jpg"
       ],
       "notes": [
         "Concept & Design",
         "Flash intro",
-        "Implementation of a model database + frontend"
+        "Model database with custom front-end"
       ]
     },
     {
@@ -245,12 +244,11 @@
       "show_as_reference": true,
       "active": false,
       "photos": [
-        "13.Home.jpg",
-        "13-.Contact.jpg"
+        "13.Home.jpg"
       ],
       "notes": [
         "Design",
-        "Content exclusively from user-administratible database"
+        "Content served exclusively from a user-manageable database"
       ]
     },
     {
@@ -265,16 +263,16 @@
       "active": false,
       "photos": [
         "14.Home.jpg",
-        "14.Contact.jpg",
         "14.Fashion.jpg",
         "14.Film.jpg",
         "14.Travel.jpg",
-        "14.Various.jpg"
+        "14.Various.jpg",
+        "14.Contact.jpg"
       ],
       "notes": [
-        "Asynchronous (ajax) server-side (PHP) generation of highest quality images",
-        "Dynamical preloading of images",
-        "Reloading of images in a better quality if window is enlarged"
+        "Asynchronous (Ajax) server-side (PHP) generation of high-quality images",
+        "Dynamic preloading of images",
+        "Reloading images at higher quality when the window is enlarged"
       ]
     },
     {
@@ -290,14 +288,14 @@
       "photos": [
         "15.Home.jpg",
         "15.Beauty.jpg",
-        "15.Contact.jpg",
         "15.Editoral.jpg",
-        "15.Fashion.jpg"
+        "15.Fashion.jpg",
+        "15.Contact.jpg"
       ],
       "notes": [
-        "Asynchronous (ajax) server-side (PHP) generation of highest quality images",
-        "Dynamical preloading of images",
-        "Reloading of images in a better quality if window is enlarged"
+        "Asynchronous (Ajax) server-side (PHP) generation of high-quality images",
+        "Dynamic preloading of images",
+        "Reloading images at higher quality when the window is enlarged"
       ]
     },
     {
@@ -309,22 +307,22 @@
       "process_time": "30:00:00",
       "completion_date": "2007-07-29",
       "show_as_reference": true,
-      "active": true,
+      "active": false,
       "photos": [
         "16.Home.jpg",
         "16.Conceptual.jpg",
-        "16.Contact.jpg",
-        "16.Fashion.jpg"
+        "16.Fashion.jpg",
+        "16.Contact.jpg"
       ],
       "notes": [
         "Flash-less animations",
-        "Dynamical preloading of images"
+        "Dynamic preloading of images"
       ]
     },
     {
       "id": "17",
       "title": "arno shop",
-      "description": "Parisien Clothing Boutique",
+      "description": "Parisian Clothing Boutique",
       "client": "Arno Bauer",
       "url": "www.arno-shop.com",
       "process_time": "120:00:00",
@@ -343,8 +341,8 @@
       "notes": [
         "Based on xt:Commerce",
         "Client-side editable content",
-        "Multiple language support",
-        "Credit card support through custom connection to french bank"
+        "Multi-language support",
+        "Credit-card support via a custom integration with a French bank"
       ]
     },
     {
@@ -385,16 +383,16 @@
         "19.6.jpg"
       ],
       "notes": [
-        "Flex 4 based",
-        "WordPress based through self developed WordPress Web Service Plugin",
+        "Built on Flex 4",
+        "WordPress integration via a custom WordPress Web Service plugin",
         "Client-side editable content",
-        "Dynamic resizing of images based on client's resolution",
+        "Dynamic image resizing based on the client's resolution",
         "Intelligent image preloader",
         "Server-side cache",
         "Client-side cache",
-        "Touchpad support for Mac OS X",
-        "CoverFlow effect",
-        "Indexable by all major web search engines (despite Flash/Flex)",
+        "Touchpad gesture support on Mac OS X",
+        "Cover Flow effect",
+        "Indexable by all major search engines (despite Flash/Flex)",
         "Google Analytics integration"
       ]
     },
@@ -411,8 +409,8 @@
       "photos": [
         "20.Home.jpg",
         "20.Coaching.jpg",
-        "20.Contact.jpg",
-        "20.Vita.jpg"
+        "20.Vita.jpg",
+        "20.Contact.jpg"
       ],
       "notes": [
         "WordPress based",
@@ -431,11 +429,9 @@
       "active": false,
       "photos": [
         "21.Home.jpg",
-        "21.Contact.jpg",
-        "21.Jurisdiction.jpg",
+        "21.Skills.jpg",
         "21.Philosophy.jpg",
-        "21.References.jpg",
-        "21.Skills.jpg"
+        "21.References.jpg"
       ]
     },
     {
@@ -449,22 +445,15 @@
       "active": false,
       "photos": [
         "22.home.jpg",
-        "22.blog.jpg",
-        "22.contact.jpg",
-        "22.contact1.jpg",
-        "22.contact2.jpg",
-        "22.development.jpg",
         "22.facts.jpg",
-        "22.references1.jpg",
-        "22.references2.jpg",
-        "22.references3.jpg",
-        "22.skills.jpg"
+        "22.skills.jpg",
+        "22.development.jpg"
       ]
     },
     {
       "id": "23",
       "title": "Hello, v1",
-      "description": "Webdesign and Webprogramming, Berlin",
+      "description": "Web Design and Web Development, Berlin",
       "client": "Björn Kahlert",
       "url": "www.bjoern-kahlert.eu",
       "completion_date": "2004",
@@ -486,8 +475,8 @@
       "photos": [
         "24.home.png",
         "24.debug-clickup.png",
-        "24.debug-colors.png",
         "24.debug-search.png",
+        "24.debug-colors.png",
         "24.debug-semanticui.png"
       ],
       "notes": [
@@ -502,12 +491,12 @@
       "url": "hello.bkahlert.com",
       "completion_date": "2023",
       "show_as_reference": true,
-      "active": false,
+      "active": true,
       "photos": [
-        "25.home-booksmarks.png",
         "25.home-chatbot.png",
-        "25.home-dropbox.png",
         "25.home-ssh.png",
+        "25.home-booksmarks.png",
+        "25.home-dropbox.png",
         "25.home-widgets.png",
         "25.playground-buttons.png",
         "25.playground-chat.png",

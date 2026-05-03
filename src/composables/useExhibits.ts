@@ -57,13 +57,7 @@ export function useExhibits() {
       .map((decade) => ({ decade, exhibits: groups.get(decade.id)! }))
   })
 
-  const yearRange = computed<{ min: number; max: number } | null>(() => {
-    const years = exhibits.value.map((e) => e.year).filter((y) => y > 0)
-    if (years.length === 0) return null
-    return { min: Math.min(...years), max: Math.max(...years) }
-  })
-
   const decadeCount = computed(() => byDecade.value.length)
 
-  return { exhibits, byDecade, loaded, error, yearRange, decadeCount, ready: loadingPromise }
+  return { exhibits, byDecade, loaded, error, decadeCount, ready: loadingPromise }
 }
