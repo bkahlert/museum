@@ -58,6 +58,16 @@ function open() {
   scroll-margin-top: 4rem;
 }
 
+@media (max-width: 899px) {
+  /* Frame is dark-on-dark and visually disappears against the gallery
+     background — align the plaque to the photo's optical edges (inside
+     the 1rem frame padding) rather than the frame's structural edges. */
+  .plaque {
+    justify-self: center;
+    width: calc(100% - 2rem);
+  }
+}
+
 @media (min-width: 900px) {
   .wall {
     grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
