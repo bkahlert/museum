@@ -2,6 +2,7 @@
 import { ref, onMounted, onBeforeUnmount, computed } from 'vue'
 import EntranceHall from '@/components/EntranceHall.vue'
 import DecadeGallery from '@/components/DecadeGallery.vue'
+import DecadeNav from '@/components/DecadeNav.vue'
 import ExhibitDetail from '@/components/ExhibitDetail.vue'
 import { useExhibits } from '@/composables/useExhibits'
 import type { Exhibit } from '@/types'
@@ -48,6 +49,8 @@ const totalExhibits = computed(() =>
 <template>
   <div class="museum">
     <EntranceHall />
+
+    <DecadeNav v-if="loaded" :decades="byDecade.map((g) => g.decade)" />
 
     <main class="galleries">
       <template v-if="loaded">

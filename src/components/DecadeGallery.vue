@@ -4,6 +4,10 @@ import ExhibitWall from './ExhibitWall.vue'
 
 defineProps<{ decade: Decade; exhibits: Exhibit[] }>()
 defineEmits<{ open: [exhibit: Exhibit] }>()
+
+function returnToEntrance() {
+  window.scrollTo({ top: 0, behavior: 'smooth' })
+}
 </script>
 
 <template>
@@ -29,6 +33,12 @@ defineEmits<{ open: [exhibit: Exhibit] }>()
         :index="i"
         @open="(e) => $emit('open', e)"
       />
+    </div>
+
+    <div class="room-end">
+      <button class="back-to-top" type="button" @click="returnToEntrance">
+        ↑ Back to entrance
+      </button>
     </div>
   </section>
 </template>
@@ -107,5 +117,40 @@ defineEmits<{ open: [exhibit: Exhibit] }>()
 .walls {
   max-width: 80rem;
   margin: 0 auto;
+}
+
+.room-end {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1.5rem 1rem;
+}
+
+.back-to-top {
+  appearance: none;
+  background: transparent;
+  border: 1px solid color-mix(in oklab, var(--accent) 40%, transparent);
+  color: rgba(245, 232, 210, 0.75);
+  padding: 0.65rem 1.4rem;
+  border-radius: 2px;
+  font-family: system-ui, sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition:
+    background 0.3s ease,
+    border-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.back-to-top:hover {
+  background: color-mix(in oklab, var(--accent) 8%, transparent);
+  border-color: color-mix(in oklab, var(--accent) 70%, transparent);
+  color: #f5e8d2;
+}
+
+.back-to-top:focus-visible {
+  outline: 1px solid color-mix(in oklab, var(--accent) 75%, white);
+  outline-offset: 2px;
 }
 </style>
