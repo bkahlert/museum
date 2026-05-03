@@ -1,11 +1,10 @@
 <script setup lang="ts">
-import { onMounted, onBeforeUnmount, ref } from 'vue'
+import { onMounted, onBeforeUnmount, ref, nextTick } from 'vue'
 import type { Decade } from '@/types'
 
 const props = defineProps<{ decades: Decade[] }>()
 
 const activeId = ref<string | null>(null)
-const visible = ref(false)
 
 let observer: IntersectionObserver | null = null
 
@@ -13,19 +12,15 @@ function jumpTo(id: string) {
   document.getElementById(`decade-${id}`)?.scrollIntoView({ behavior: 'smooth', block: 'start' })
 }
 
-function onScroll() {
-  visible.value = window.scrollY > window.innerHeight * 0.4
-}
-
-onMounted(() => {
+onMounted(async () => {
+  await nextTick()
   observer = new IntersectionObserver(
     (entries) => {
       const inView = entries
         .filter((e) => e.isIntersecting)
         .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0]
       if (inView) {
-        const id = inView.target.id.replace(/^decade-/, '')
-        activeId.value = id
+        activeId.value = inView.target.id.replace(/^decade-/, '')
       }
     },
     { rootMargin: '-30% 0px -50% 0px', threshold: [0, 0.25, 0.5, 0.75, 1] },
@@ -34,23 +29,15 @@ onMounted(() => {
     const el = document.getElementById(`decade-${d.id}`)
     if (el) observer.observe(el)
   }
-  window.addEventListener('scroll', onScroll, { passive: true })
-  onScroll()
 })
 
 onBeforeUnmount(() => {
   observer?.disconnect()
-  window.removeEventListener('scroll', onScroll)
 })
 </script>
 
 <template>
-  <nav
-    class="decade-nav"
-    :class="{ visible }"
-    role="navigation"
-    aria-label="Jump to decade"
-  >
+  <nav class="decade-nav" aria-label="Jump to decade">
     <ul>
       <li v-for="d in decades" :key="d.id">
         <button
@@ -67,22 +54,13 @@ onBeforeUnmount(() => {
 
 <style scoped>
 .decade-nav {
-  position: fixed;
-  top: 1rem;
-  left: 50%;
-  transform: translateX(-50%) translateY(-1rem);
+  position: sticky;
+  top: 0;
   z-index: 40;
-  opacity: 0;
+  display: flex;
+  justify-content: center;
+  padding: 1rem 1rem 1.25rem;
   pointer-events: none;
-  transition:
-    opacity 0.4s ease,
-    transform 0.4s ease;
-}
-
-.decade-nav.visible {
-  opacity: 1;
-  transform: translateX(-50%) translateY(0);
-  pointer-events: auto;
 }
 
 ul {
@@ -97,6 +75,7 @@ ul {
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   box-shadow: 0 6px 18px -8px rgba(0, 0, 0, 0.7);
+  pointer-events: auto;
 }
 
 button {
@@ -104,11 +83,10 @@ button {
   background: transparent;
   border: none;
   color: rgba(245, 232, 210, 0.55);
-  font-family: system-ui, sans-serif;
-  font-size: 0.72rem;
-  letter-spacing: 0.25em;
-  text-transform: uppercase;
-  padding: 0.35rem 0.85rem;
+  font-family: 'Cormorant Garamond', 'Times New Roman', Georgia, serif;
+  font-size: 0.95rem;
+  letter-spacing: 0.05em;
+  padding: 0.35rem 1rem;
   border-radius: 999px;
   cursor: pointer;
   transition:

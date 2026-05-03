@@ -14,28 +14,33 @@ function compareDateDesc(a: string, b: string): number {
 
 const exhibits = ref<Exhibit[]>([])
 const loaded = ref(false)
+const error = ref<string | null>(null)
 let loadingPromise: Promise<void> | null = null
 
 export function useExhibits() {
   if (!loadingPromise) {
     loadingPromise = (async () => {
-      const res = await fetch(`${import.meta.env.BASE_URL}references.json`, { cache: 'no-cache' })
-      const data = (await res.json()) as ReferencesFile
-      const base = `${import.meta.env.BASE_URL}references/`
-      const filtered: Exhibit[] = data.references
-        .filter((r: Reference) => r.show_as_reference)
-        .map<Exhibit>((r) => {
-          const year = parseYear(r.completion_date)
-          return {
-            ...r,
-            year,
-            images: r.photos.map((p) => base + p),
-            decade: decadeFor(year),
-          }
-        })
-        .sort((a, b) => compareDateDesc(a.completion_date, b.completion_date))
-      exhibits.value = filtered
-      loaded.value = true
+      try {
+        const res = await fetch(`${import.meta.env.BASE_URL}references.json`, { cache: 'no-cache' })
+        if (!res.ok) throw new Error(`HTTP ${res.status}`)
+        const data = (await res.json()) as ReferencesFile
+        const base = `${import.meta.env.BASE_URL}references/`
+        exhibits.value = data.references
+          .filter((r: Reference) => r.show_as_reference)
+          .map<Exhibit>((r) => {
+            const year = parseYear(r.completion_date)
+            return {
+              ...r,
+              year,
+              images: r.photos.map((p) => base + p),
+              decade: decadeFor(year),
+            }
+          })
+          .sort((a, b) => compareDateDesc(a.completion_date, b.completion_date))
+        loaded.value = true
+      } catch (e) {
+        error.value = e instanceof Error ? e.message : String(e)
+      }
     })()
   }
 
@@ -52,5 +57,13 @@ export function useExhibits() {
       .map((decade) => ({ decade, exhibits: groups.get(decade.id)! }))
   })
 
-  return { exhibits, byDecade, loaded, ready: loadingPromise }
+  const yearRange = computed<{ min: number; max: number } | null>(() => {
+    const years = exhibits.value.map((e) => e.year).filter((y) => y > 0)
+    if (years.length === 0) return null
+    return { min: Math.min(...years), max: Math.max(...years) }
+  })
+
+  const decadeCount = computed(() => byDecade.value.length)
+
+  return { exhibits, byDecade, loaded, error, yearRange, decadeCount, ready: loadingPromise }
 }

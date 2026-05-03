@@ -21,7 +21,7 @@ function open() {
     :class="`align-${offset}`"
     :style="{ '--accent': exhibit.decade.accent }"
   >
-    <div class="frame" role="button" tabindex="0" @click="open" @keydown.enter="open" @keydown.space.prevent="open">
+    <div class="frame" @click="open">
       <div class="canvas">
         <img
           v-if="primaryImage"
@@ -34,17 +34,17 @@ function open() {
         <div class="vignette" />
       </div>
     </div>
-    <div class="plaque" role="button" tabindex="0" @click="open" @keydown.enter="open" @keydown.space.prevent="open">
-      <div class="plaque-inner">
-        <h3>{{ exhibit.title }}</h3>
-        <p class="desc">{{ exhibit.description }}</p>
-        <div class="meta">
+    <button type="button" class="plaque" :aria-label="`Open ${exhibit.title}`" @click="open">
+      <span class="plaque-inner">
+        <span class="title">{{ exhibit.title }}</span>
+        <span class="desc">{{ exhibit.description }}</span>
+        <span class="meta">
           <span class="year">{{ yearLabel }}</span>
           <span v-if="clientLine" class="dot" aria-hidden="true">·</span>
           <span v-if="clientLine" class="client">{{ clientLine }}</span>
-        </div>
-      </div>
-    </div>
+        </span>
+      </span>
+    </button>
   </article>
 </template>
 
@@ -90,15 +90,8 @@ function open() {
 
 .frame:hover,
 .wall:has(.plaque:hover) .frame,
-.wall:has(.plaque:focus-visible) .frame,
-.frame:focus-visible {
+.wall:has(.plaque:focus-visible) .frame {
   transform: translateY(-4px);
-}
-
-.frame:focus-visible,
-.plaque:focus-visible {
-  outline: 1px solid color-mix(in oklab, var(--accent) 75%, white);
-  outline-offset: 4px;
 }
 
 .canvas {
@@ -107,7 +100,10 @@ function open() {
   border-radius: 2px;
   background: #050402;
   aspect-ratio: 4 / 3;
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.6) inset;
+  box-shadow:
+    inset 0 3px 8px rgba(0, 0, 0, 0.65),
+    inset 0 -1px 2px rgba(0, 0, 0, 0.5),
+    inset 0 0 0 1px rgba(0, 0, 0, 0.7);
 }
 
 .canvas img {
@@ -149,6 +145,9 @@ function open() {
 .plaque {
   --plaque-bg: linear-gradient(160deg, #c4a368 0%, #8a6f3d 50%, #5d4621 100%);
   position: relative;
+  appearance: none;
+  border: none;
+  text-align: left;
   padding: 1.25rem 1.5rem;
   max-width: 26rem;
   background: var(--plaque-bg);
@@ -160,6 +159,11 @@ function open() {
   color: #1a1208;
   font-family: 'Times New Roman', 'Cormorant Garamond', Georgia, serif;
   cursor: pointer;
+}
+
+.plaque:focus-visible {
+  outline: 1px solid color-mix(in oklab, var(--accent) 75%, white);
+  outline-offset: 4px;
 }
 
 .plaque::before,
@@ -181,7 +185,12 @@ function open() {
   right: 6px;
 }
 
-.plaque-inner h3 {
+.plaque-inner {
+  display: block;
+}
+
+.plaque .title {
+  display: block;
   margin: 0 0 0.35rem;
   font-size: 1.15rem;
   font-weight: 600;
@@ -189,7 +198,8 @@ function open() {
   color: #1a1208;
 }
 
-.plaque-inner .desc {
+.plaque .desc {
+  display: block;
   margin: 0 0 0.6rem;
   font-style: italic;
   font-size: 0.92rem;
@@ -197,7 +207,7 @@ function open() {
   color: #2a1d0d;
 }
 
-.plaque-inner .meta {
+.plaque .meta {
   display: flex;
   gap: 0.4rem;
   align-items: baseline;
@@ -207,11 +217,11 @@ function open() {
   color: #3a2a14;
 }
 
-.plaque-inner .year {
+.plaque .year {
   font-weight: 700;
 }
 
-.plaque-inner .dot {
+.plaque .dot {
   opacity: 0.6;
 }
 </style>

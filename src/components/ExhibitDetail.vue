@@ -280,6 +280,10 @@ onBeforeUnmount(() => {
   background: #050402;
   border-radius: 2px;
   pointer-events: none;
+  box-shadow:
+    0 2px 6px rgba(0, 0, 0, 0.6),
+    0 14px 32px -14px rgba(0, 0, 0, 0.7),
+    0 0 0 1px rgba(0, 0, 0, 0.6);
 }
 
 .primary .empty {
@@ -352,10 +356,9 @@ onBeforeUnmount(() => {
 }
 
 .era-tag {
-  font-family: system-ui, sans-serif;
-  font-size: 0.7rem;
-  letter-spacing: 0.4em;
-  text-transform: uppercase;
+  font-family: 'Cormorant Garamond', 'Times New Roman', Georgia, serif;
+  font-size: 0.95rem;
+  letter-spacing: 0.1em;
   color: color-mix(in oklab, var(--accent) 70%, white);
   opacity: 0.85;
   margin-bottom: 0.75rem;

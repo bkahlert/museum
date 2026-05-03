@@ -1,13 +1,39 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { computed } from 'vue'
+import { useExhibits } from '@/composables/useExhibits'
+
+const { yearRange, decadeCount } = useExhibits()
+
+const NUMBER_WORDS: Record<number, string> = {
+  1: 'One',
+  2: 'Two',
+  3: 'Three',
+  4: 'Four',
+  5: 'Five',
+}
+
+const decadesLine = computed(() => {
+  const n = decadeCount.value
+  if (n === 0) return ''
+  const word = NUMBER_WORDS[n] ?? String(n)
+  return `${word} ${n === 1 ? 'decade' : 'decades'} of websites, applications, and experiments`
+})
+
+const yearsLine = computed(() => {
+  const r = yearRange.value
+  if (!r) return ''
+  return r.min === r.max ? `${r.min}` : `${r.min} — ${r.max}`
+})
+</script>
 
 <template>
   <header class="hall">
     <div class="title-plate">
       <div class="eyebrow">A retrospective</div>
-      <h1>Museum of Web</h1>
-      <p class="subtitle">
-        Two decades of websites, applications, and experiments<br />
-        by Björn Kahlert · 2002 — 2023
+      <h1>Werkschau</h1>
+      <p v-if="decadesLine && yearsLine" class="subtitle">
+        {{ decadesLine }}<br />
+        by Björn Kahlert · {{ yearsLine }}
       </p>
     </div>
   </header>

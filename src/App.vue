@@ -7,7 +7,7 @@ import ExhibitDetail from '@/components/ExhibitDetail.vue'
 import { useExhibits } from '@/composables/useExhibits'
 import type { Exhibit } from '@/types'
 
-const { byDecade, loaded } = useExhibits()
+const { byDecade, loaded, error } = useExhibits()
 const selected = ref<Exhibit | null>(null)
 const scrollProgress = ref(0)
 
@@ -62,6 +62,9 @@ const totalExhibits = computed(() =>
           @open="open"
         />
       </template>
+      <div v-else-if="error" class="loading error">
+        <span>Exhibits unavailable · {{ error }}</span>
+      </div>
       <div v-else class="loading">
         <span>Opening the museum…</span>
       </div>
@@ -149,6 +152,10 @@ a {
   letter-spacing: 0.3em;
   text-transform: uppercase;
   font-size: 0.8rem;
+}
+
+.loading.error {
+  color: rgba(245, 200, 180, 0.55);
 }
 
 .exit-hall {
