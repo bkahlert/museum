@@ -66,28 +66,6 @@ docker run --rm -p 8080:8080 bkahlert/museum:latest
 
 Tags: `latest` tracks `main`; `vX.Y.Z` and `X.Y` track semver release tags; `sha-<short>` pins to a specific commit.
 
-## Adding or editing exhibits
-
-1. Drop photos into `public/references/` (e.g. `42.Home.jpg`, `42.Detail.jpg`).
-2. Append an entry to `public/references.json`:
-
-   ```jsonc
-   {
-     "id": "42",
-     "title": "…",
-     "description": "…",
-     "client": "…",
-     "url": "example.com",
-     "completion_date": "2024-05-01",
-     "show_as_reference": true,
-     "active": true,
-     "photos": ["42.Home.jpg", "42.Detail.jpg"],
-     "notes": ["Highlights of the project"]
-   }
-   ```
-
-Only entries with `show_as_reference: true` appear. The decade is derived from `completion_date`.
-
 ## Gallery
 
 <figure>
