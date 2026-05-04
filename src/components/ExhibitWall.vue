@@ -23,13 +23,13 @@ function open() {
   >
     <div class="frame" @click="open">
       <div class="canvas">
-        <img
-          v-if="primaryImage"
-          :src="primaryImage"
-          :alt="exhibit.title"
-          loading="lazy"
-          decoding="async"
-        />
+        <picture v-if="primaryImage">
+          <source
+            :srcset="primaryImage.replace(/\.(png|jpe?g)$/i, '.webp')"
+            type="image/webp"
+          />
+          <img :src="primaryImage" :alt="exhibit.title" loading="lazy" decoding="async" />
+        </picture>
         <div v-else class="empty">no image preserved</div>
         <div class="vignette" />
       </div>

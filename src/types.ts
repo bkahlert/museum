@@ -2,6 +2,7 @@ export interface Reference {
   id: string
   title: string
   description: string
+  location?: string
   client: string
   notes?: string[]
   url: string
