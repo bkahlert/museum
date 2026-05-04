@@ -135,6 +135,11 @@ onBeforeUnmount(() => {
             </span>
           </dd>
 
+          <template v-if="exhibit.location">
+            <dt>Location</dt>
+            <dd>{{ exhibit.location }}</dd>
+          </template>
+
           <dt>Completed</dt>
           <dd>{{ exhibit.completion_date }}</dd>
 

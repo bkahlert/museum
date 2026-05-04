@@ -3,7 +3,8 @@
     {
       "id": "1",
       "title": "bedboy 2006",
-      "description": "Bed & Breakfast Contest, Berlin",
+      "description": "Online model contest and public vote for ebab's promotional face",
+      "location": "Berlin",
       "client": "enjoy bed & breakfast\nwww.ebab.de",
       "url": "www.bedboy.de",
       "process_time": "50:00:00",
@@ -25,7 +26,8 @@
     {
       "id": "2",
       "title": "aldo consulting",
-      "description": "Business Consultancy, Berlin",
+      "description": "Business consultancy website",
+      "location": "Berlin",
       "client": "Volker Magdalinski",
       "url": "www.aldocon.de",
       "process_time": "12:00:00",
@@ -41,7 +43,8 @@
     {
       "id": "3",
       "title": "AKD Pflegedienst",
-      "description": "Nursing Service, Berlin",
+      "description": "Ambulatory home nursing care service",
+      "location": "Berlin",
       "client": "AKD\nAktiver Kompetenter Dienst\nAmbulanter Pflegedienst\n\nMitglied im Verein für Selbstbestimmtes Wohnen im Alter",
       "url": "www.akd-pflegedienst.de",
       "process_time": "20:00:00",
@@ -58,7 +61,8 @@
     {
       "id": "4",
       "title": "BAUTRA GmbH",
-      "description": "Construction Schedule / Supervision, Berlin",
+      "description": "Construction planning and site supervision firm",
+      "location": "Berlin",
       "client": "BAUTRA GmbH\nBauplanung und Bauüberwachung",
       "url": "www.bautra-berlin.de",
       "process_time": "90:00:00",
@@ -80,7 +84,8 @@
     {
       "id": "5",
       "title": "Boris Kralj",
-      "description": "Photography / Visual Concept, Berlin / Belgrade",
+      "description": "Photography and visual concept portfolio",
+      "location": "Berlin / Belgrade",
       "client": "Boris Kralj",
       "url": "www.boriskralj.de",
       "process_time": "14:00:00",
@@ -101,7 +106,8 @@
     {
       "id": "6",
       "title": "COMMITMENT",
-      "description": "Agency for Actors, Directors, Screenwriters and Composers, Berlin",
+      "description": "Talent agency for film, TV and theatre",
+      "location": "Berlin",
       "client": "COMMITMENT\nAgentur für Film, Fernsehen & Theater\nMarkus Potyka & Marco Gilles GbR",
       "url": "www.commitment.de",
       "process_time": "30:00:00",
@@ -122,7 +128,8 @@
     {
       "id": "7",
       "title": "Jugendbereich des Mann-O-Meter e.V.",
-      "description": "Gay Youth Group, Berlin",
+      "description": "Youth community platform for the gay advisory center Mann-O-Meter",
+      "location": "Berlin",
       "client": "Mann-O-Meter e.V.\nwww.mann-o-meter.de",
       "url": "www.jungschwuppen.de",
       "process_time": "35:00:00",
@@ -134,7 +141,8 @@
     {
       "id": "8",
       "title": "INFOdatenbank des Mann-O-Meter e.V.",
-      "description": "Information Service, Berlin",
+      "description": "Community information database for gay and queer services",
+      "location": "Berlin",
       "client": "Mann-O-Meter e.V.\nwww.mann-o-meter.de",
       "url": "www.mann-o-meter.de/db",
       "process_time": "120:00:00",
@@ -155,7 +163,8 @@
     {
       "id": "9",
       "title": "meetyoo conferencing | Stream",
-      "description": "Streaming Platform for Conference Provider, Berlin",
+      "description": "Conference streaming platform for meetyoo customers",
+      "location": "Berlin",
       "client": "meetyoo conferencing GmbH\nwww.meetyoo.de",
       "url": "stream.meetyoo.de",
       "process_time": "40:00:00",
@@ -175,7 +184,7 @@
     {
       "id": "10",
       "title": "Bjørnson",
-      "description": "My private website",
+      "description": "Early personal website with PHP-generated Polaroid image effects",
       "client": "Björn Kahlert",
       "url": "www.bjornson.co.uk",
       "process_time": "50:00:00",
@@ -196,7 +205,8 @@
     {
       "id": "11",
       "title": "Schapka",
-      "description": "Schapka Designer, Berlin",
+      "description": "Handcrafted hat and headwear designer portfolio",
+      "location": "Berlin",
       "client": "Evelin Mauff",
       "url": "www.schapka.net",
       "process_time": "25:00:00",
@@ -214,7 +224,8 @@
     {
       "id": "12",
       "title": "Fotoatelier apart berlin",
-      "description": "Photo Studio / Cultural Network, Berlin",
+      "description": "Photography studio and artist network platform",
+      "location": "Berlin",
       "client": "Moritz David Friedrich\nFotoatelier apart",
       "url": "www.apart-berlin.com",
       "process_time": "100:00:00",
@@ -237,7 +248,8 @@
     {
       "id": "13",
       "title": "Moritz David Friedrich",
-      "description": "Photographer, Berlin",
+      "description": "Photography portfolio",
+      "location": "Berlin",
       "client": "Moritz David Friedrich",
       "url": "www.moritzdavidfriedrich.com",
       "process_time": "40:00:00",
@@ -255,7 +267,8 @@
     {
       "id": "14",
       "title": "Roman Göbel",
-      "description": "Fashion and Portrait Photographer, Berlin",
+      "description": "Fashion and portrait photography portfolio",
+      "location": "Berlin",
       "client": "Roman Göbel",
       "url": "www.romangoebel.com",
       "process_time": "24:00:00",
@@ -279,7 +292,8 @@
     {
       "id": "15",
       "title": "Christiane Buchholz",
-      "description": "Make-Up Artist, Berlin",
+      "description": "Make-up artist portfolio for beauty, editorial and fashion",
+      "location": "Berlin",
       "client": "Christiane Buchholz",
       "url": "www.christiane-buchholz.com",
       "process_time": "30:00:00",
@@ -302,7 +316,8 @@
     {
       "id": "16",
       "title": "Georg Daniel Sartore",
-      "description": "International Stylist, Italy / Germany",
+      "description": "International fashion stylist portfolio",
+      "location": "Italy / Germany",
       "client": "Georg Daniel Sartore",
       "url": "www.danielgeorgsartore.com",
       "process_time": "30:00:00",
@@ -323,7 +338,8 @@
     {
       "id": "17",
       "title": "arno shop",
-      "description": "Parisian Clothing Boutique",
+      "description": "Parisian clothing boutique e-commerce store",
+      "location": "Paris",
       "client": "Arno Bauer",
       "url": "www.arno-shop.com",
       "process_time": "120:00:00",
@@ -349,7 +365,8 @@
     {
       "id": "18",
       "title": "Mike Vossmann",
-      "description": "Magician and Clown, Berlin",
+      "description": "Performance artist website for a Berlin magician and clown",
+      "location": "Berlin",
       "client": "Matthias Voigt",
       "url": "www.mike-vossmann.de",
       "process_time": "15:00:00",
@@ -368,7 +385,8 @@
     {
       "id": "19",
       "title": "Bert Loewenherz",
-      "description": "Photographer, Berlin",
+      "description": "Photography portfolio with immersive Flex-based CoverFlow gallery",
+      "location": "Berlin",
       "client": "Bert Löwenherz",
       "url": "www.bertloewenherz.com",
       "process_time": "90:00:00",
@@ -400,7 +418,8 @@
     {
       "id": "20",
       "title": "Marcus Behrens",
-      "description": "Psychologist, Berlin",
+      "description": "Website for a psychologist and coach",
+      "location": "Berlin",
       "client": "Marcus Behrens",
       "url": "www.marcus-behrens.de",
       "process_time": "20:00:00",
@@ -422,7 +441,8 @@
     {
       "id": "21",
       "title": "Björn Kahlert, v2",
-      "description": "Information Technologist, Berlin",
+      "description": "Personal portfolio with skills, philosophy and client references",
+      "location": "Berlin",
       "client": "Björn Kahlert",
       "url": "www.bkahlert.com",
       "completion_date": "2010",
@@ -441,7 +461,8 @@
     {
       "id": "22",
       "title": "Björn Kahlert, v3",
-      "description": "Information Technologist, Berlin",
+      "description": "Rebuilt personal portfolio with responsive design and development timeline",
+      "location": "Berlin",
       "client": "Björn Kahlert",
       "url": "bkahlert.com",
       "completion_date": "2012",
@@ -459,8 +480,9 @@
     },
     {
       "id": "23",
-      "title": "Hello, v1",
-      "description": "Web Design and Web Development, Berlin",
+      "title": "Björn Kahlert, v1",
+      "description": "Freelance web design and web development portfolio",
+      "location": "Berlin",
       "client": "Björn Kahlert",
       "url": "www.bjoern-kahlert.eu",
       "completion_date": "2004",
@@ -472,12 +494,12 @@
     },
     {
       "id": "24",
-      "title": "Hello! Dashboard, v1",
-      "description": "Personal dashboard / start page",
+      "title": "Hello! Prototype",
+      "description": "Personal dashboard and start page prototype",
       "client": "Björn Kahlert",
       "url": "hello.bkahlert.com",
       "completion_date": "2022",
-      "show_as_reference": true,
+      "show_as_reference": false,
       "active": false,
       "photos": [
         "24.home.png",
@@ -493,8 +515,8 @@
     },
     {
       "id": "25",
-      "title": "Hello! Dashboard, v2",
-      "description": "Personal dashboard / start page",
+      "title": "Hello! Dashboard",
+      "description": "Personal dashboard with modular widget system",
       "client": "Björn Kahlert",
       "url": "hello.bkahlert.com",
       "completion_date": "2023",
@@ -528,7 +550,8 @@
     {
       "id": "26",
       "title": "BAUTRA GmbH",
-      "description": "Construction Schedule / Supervision, Berlin",
+      "description": "Construction planning and site supervision firm, redesigned",
+      "location": "Berlin",
       "client": "BAUTRA GmbH\nBauplanung und Bauüberwachung",
       "url": "www.bautra-berlin.de",
       "completion_date": "2014",
@@ -541,14 +564,15 @@
     {
       "id": "27",
       "title": "Queer Riot Club",
-      "description": "Underground Queer Club Night, Berlin",
+      "description": "Underground queer club night and event blog",
+      "location": "Berlin",
       "client": "Marcus Wolschke",
       "url": "www.queerriotclub.com",
       "completion_date": "2012",
       "show_as_reference": true,
       "active": false,
       "photos": [
-        "27.1.png",
+        "27.1.jpg",
         "27.2.png"
       ],
       "notes": [
@@ -560,7 +584,8 @@
     {
       "id": "28",
       "title": "Life Coaching with Melody",
-      "description": "Life Coaching Practice, USA / Germany",
+      "description": "Life coaching practice for executives and individuals",
+      "location": "USA / Germany",
       "client": "Melody Tailor-Fliege",
       "url": "www.life-coaching-with-melody.com",
       "completion_date": "2021",
