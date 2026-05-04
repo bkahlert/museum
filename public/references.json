@@ -95,7 +95,7 @@
         "5.Contact.jpg"
       ],
       "notes": [
-        "Reprogramming for easy image exchange"
+        "Photography portfolio with CMS reprogrammed for self-managed image updates"
       ]
     },
     {
@@ -115,7 +115,8 @@
         "6.Contact.jpg"
       ],
       "notes": [
-        "Programming and implementation of a streaming solution"
+        "Artist agency website for film, TV and theatre talents",
+        "Integrated streaming solution for actor and director demo reels"
       ]
     },
     {
@@ -247,8 +248,8 @@
         "13.Home.jpg"
       ],
       "notes": [
-        "Design",
-        "Content served exclusively from a user-manageable database"
+        "Custom design and build",
+        "All content served from a user-manageable database back-end, no static HTML"
       ]
     },
     {
@@ -361,7 +362,7 @@
         "18.3.jpg"
       ],
       "notes": [
-        "Flash-less animations"
+        "Entertainer portfolio with animated transitions — deliberately Flash-free for broader compatibility"
       ]
     },
     {
@@ -432,6 +433,9 @@
         "21.Skills.jpg",
         "21.Philosophy.jpg",
         "21.References.jpg"
+      ],
+      "notes": [
+        "Personal portfolio with skills overview, philosophy and client reference list"
       ]
     },
     {
@@ -448,6 +452,9 @@
         "22.facts.jpg",
         "22.skills.jpg",
         "22.development.jpg"
+      ],
+      "notes": [
+        "Rebuilt personal portfolio with responsive design and an interactive development timeline"
       ]
     },
     {
@@ -480,7 +487,8 @@
         "24.debug-semanticui.png"
       ],
       "notes": [
-        "SemanticUI, Jetpack Compose alpha, ClickUp integration"
+        "Prototype personal dashboard built with Kotlin/JS and Semantic UI",
+        "Early Jetpack Compose alpha exploration; ClickUp task management widget"
       ]
     },
     {
@@ -508,13 +516,73 @@
         "25.playground-video.png"
       ],
       "notes": [
-        "Infrastructure as Code, Backend, Frontend all in Kotlin",
-        "Kotlin Multiplatform",
-        "Gradle Multi-Project Composite Build",
-        "AWS CDK, Lambdas, Cognito, API Gateway, …",
-        "Sign in with Apple",
-        "Fritz2, Tailwind CSS",
+        "Kotlin/JS frontend with Fritz2 reactive framework (Store/Lens state management) and Tailwind CSS",
+        "Gradle composite build spanning 35+ included builds — apps, domain libraries, and build-logic convention plugins",
+        "Modular widget system: ChatGPT chatbot, SSH terminal (XTerm.js), website embedding, video, image galleries, bookmarks, data views",
+        "OpenAI client integration with streaming chat completions",
+        "Encrypted client-side state persistence; multi-app output (main dashboard, playground, legacy v1)",
+        "Docker multi-arch image (linux/amd64, linux/arm64); GitHub Actions CI/CD with SBOM attestation",
         "ClickUp integration"
+      ]
+    },
+    {
+      "id": "26",
+      "title": "BAUTRA GmbH",
+      "description": "Construction Schedule / Supervision, Berlin",
+      "client": "BAUTRA GmbH\nBauplanung und Bauüberwachung",
+      "url": "www.bautra-berlin.de",
+      "completion_date": "2014",
+      "show_as_reference": true,
+      "active": false,
+      "photos": [
+        "26.png"
+      ]
+    },
+    {
+      "id": "27",
+      "title": "Queer Riot Club",
+      "description": "Underground Queer Club Night, Berlin",
+      "client": "Marcus Wolschke",
+      "url": "www.queerriotclub.com",
+      "completion_date": "2012",
+      "show_as_reference": true,
+      "active": false,
+      "photos": [
+        "27.1.png",
+        "27.2.png"
+      ],
+      "notes": [
+        "WordPress blog covering a queer underground club event series at venues including Kunsthaus Tacheles, Südblock, Rauschgold and Mutvilla",
+        "Custom child theme (based on Oxygen) with grunge typeface and dark slate background",
+        "Event photo galleries with resident and guest artist listings"
+      ]
+    },
+    {
+      "id": "28",
+      "title": "Life Coaching with Melody",
+      "description": "Life Coaching Practice, USA / Germany",
+      "client": "Melody Tailor-Fliege",
+      "url": "www.life-coaching-with-melody.com",
+      "completion_date": "2021",
+      "show_as_reference": true,
+      "active": false,
+      "photos": [
+        "28.1.png",
+        "28.2.png",
+        "28.3.png",
+        "28.4.png",
+        "28.5.png",
+        "28.6.png",
+        "28.7.png",
+        "28.8.png",
+        "28.9.png"
+      ],
+      "notes": [
+        "WordPress with WooCommerce product store (videos, workbooks, meditations)",
+        "Visual Composer (WPBakery) page builder for rich one-page layout",
+        "Online coaching appointment booking and multi-session packages",
+        "Core Values Index™ assessment landing page",
+        "Embedded ELIZA (Weizenbaum chatbot) with animations as a tongue-in-cheek free coaching alternative"
       ]
     }
   ]
