@@ -95,13 +95,18 @@ onBeforeUnmount(() => {
           @click="onImageClick"
           @wheel="onWheel"
         >
-          <img
-            v-if="exhibit.images[activeImage]"
-            :src="exhibit.images[activeImage]"
-            :alt="exhibit.title"
-            decoding="async"
-            draggable="false"
-          />
+          <picture v-if="exhibit.images[activeImage]">
+            <source
+              :srcset="exhibit.images[activeImage]!.replace(/\.(png|jpe?g)$/i, '.webp')"
+              type="image/webp"
+            />
+            <img
+              :src="exhibit.images[activeImage]"
+              :alt="exhibit.title"
+              decoding="async"
+              draggable="false"
+            />
+          </picture>
           <div v-else class="empty">no image preserved</div>
           <div v-if="hasMultiple" class="counter" aria-hidden="true">
             {{ activeImage + 1 }} / {{ exhibit.images.length }}
@@ -117,7 +122,10 @@ onBeforeUnmount(() => {
             :aria-label="`View image ${i + 1}`"
             @click.stop="activeImage = i"
           >
-            <img :src="img" :alt="''" loading="lazy" decoding="async" />
+            <picture>
+              <source :srcset="img.replace(/\.(png|jpe?g)$/i, '.webp')" type="image/webp" />
+              <img :src="img" :alt="''" loading="lazy" decoding="async" />
+            </picture>
           </button>
         </div>
       </div>
